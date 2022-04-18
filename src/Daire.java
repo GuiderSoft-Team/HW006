@@ -4,10 +4,7 @@ public class Daire {
     public double getYaricap() {
         return yaricap;
     }
-    public Daire(double yaricap, double yukseklik) {
-        setYaricap(yaricap);
-        // silindir.setYukseklik(yukseklik);  TODO:
-    }
+
     public void setYaricap(double yaricap) {
         this.yaricap = yaricap < 0 ? 0 : yaricap;
     }

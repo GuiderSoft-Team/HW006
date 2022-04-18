@@ -3,7 +3,8 @@ public class Silindir extends Daire {
     private double yukseklik;
 
     public Silindir(double yaricap, double yukseklik) {
-        super(yaricap,yukseklik);
+        super(yaricap);
+        setYukseklik(yukseklik);
     }
 
     public double getYukseklik() {
