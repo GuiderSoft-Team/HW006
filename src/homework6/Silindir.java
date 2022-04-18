@@ -6,7 +6,7 @@ public class Silindir extends Daire {
     public Silindir() {
     }
 
-    public Silindir(double yariCap,double yukseklik) {
+    public Silindir(double yariCap, double yukseklik) {
         super(yariCap);
         this.yukseklik = yukseklik;
     }
@@ -16,22 +16,22 @@ public class Silindir extends Daire {
     }
 
     public void setYukseklik(double yukseklik) {
-        if (yukseklik>0){
-            this.yukseklik = yukseklik;}
-        else {
-            yukseklik=0;
+        if (yukseklik > 0) {
+            this.yukseklik = yukseklik;
+        } else {
+            yukseklik = 0;
         }
 
     }
-    public double getHacim(){
-    return super.alan()*yukseklik;
-    }
-    public double getAlan(){
-        return 2 * getYariCap()* getYariCap()* Math.PI + 2 * Math.PI * getYariCap() * yukseklik;
+
+    public double getHacim() {
+        return super.getAlan() * yukseklik;
     }
 
     @Override
-    public double alan() {
-        return getAlan();
+    public double getAlan() {
+        return 2 * getYariCap() * getYariCap() * Math.PI + 2 * Math.PI * getYariCap() * yukseklik;
     }
+
+
 }

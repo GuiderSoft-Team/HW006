@@ -5,7 +5,7 @@ public class MainApp {
         System.out.println("Daire...");
         Daire daire = new Daire(3.75);
         System.out.println("Yarıçap= " +daire.getYariCap());
-        System.out.println(String.format("Alan=%5.2f ",daire.alan()));
+        System.out.println(String.format("Alan=%5.2f ",daire.getAlan()));
         System.out.println("");
         System.out.println("Silindir...");
         Silindir silindir = new Silindir(5.55, 7.25);
