@@ -3,9 +3,7 @@ public class Silindir extends Daire {
     private double yukseklik;
 
     public Silindir(double yaricap, double yukseklik) {
-        setYaricap(yaricap);
-        this.yukseklik = yukseklik;
-
+        super(yaricap,yukseklik);
     }
 
     public double getYukseklik() {
