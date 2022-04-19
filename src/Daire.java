@@ -15,6 +15,7 @@ public class Daire {
             yaricap=0;
         }
         this.yaricap=yaricap;
+
     }
 
     public double getYaricap() {
@@ -28,10 +29,13 @@ public class Daire {
     }
 
     public void showInfo(){
+
+
+        System.out.println();
         System.out.println("Daire...");
-        Daire daire = new Daire(getYaricap());
-        System.out.printf("Yarıçap=%.2f\n" ,daire.getYaricap());
-        System.out.printf("Alan= %.2f\n",daire.getAlan());
+
+        System.out.printf("Yarıçap=%.2f\n",getYaricap());
+        System.out.printf("Alan= %.2f\n",getAlan());
         System.out.println("");
     }
 

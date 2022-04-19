@@ -32,12 +32,12 @@ public class Silindir extends Daire {
    public void showInfo(){
 
 
-       Silindir silindir = new Silindir(getYaricap(),getYukseklik());
+
        System.out.println("Silindir...");
-       System.out.printf("Yarıçap=%.2f\n", silindir.getYaricap());
-       System.out.printf("Yükseklik=%.2f\n", silindir.getYukseklik());
-       System.out.printf("Alan=%.2f\n" , silindir.getAlan());
-       System.out.printf("Hacim=%.2f", silindir.getHacim());
+       System.out.printf("Yarıçap=%.2f\n", getYaricap());
+       System.out.printf("Yükseklik=%.2f\n", getYukseklik());
+       System.out.printf("Alan=%.2f\n" , getAlan());
+       System.out.printf("Hacim=%.2f", getHacim());
 
    }
 }
