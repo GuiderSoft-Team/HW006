@@ -13,8 +13,10 @@ public class Silindir extends Daire{
     }
 
     public void setYukseklik(double yukseklik) {
+                if(yukseklik<0){
+            yukseklik=0;
+        }
         this.yukseklik = yukseklik;
-
    }
     public double getHacim(){
         return super.getAlan()*yukseklik;
