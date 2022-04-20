@@ -1,7 +1,6 @@
 public class Daire {
 
     private double yariCap;
-    private double alan;
 
 
     public Daire(double yariCap) {
@@ -12,21 +11,6 @@ public class Daire {
 
     }
 
-    public double getAlan() {
-        alan=yariCap*yariCap*Math.PI;
-                return alan;
-    }
-
-
-
-
-    public double setAlan() {
-        if(yariCap<0){
-            alan=0;
-        }
-        return alan;
-    }
-
 
 
     public double getYariCap() {
@@ -34,9 +18,15 @@ public class Daire {
     }
 
     public void setYariCap(double yariCap) {
+        if(yariCap<0){
+            yariCap=0;
+        }
         this.yariCap = yariCap;
 
 
+    }
+    public double getAlan(){
+        return yariCap*yariCap*Math.PI;
     }
 
 
