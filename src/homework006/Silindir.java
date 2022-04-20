@@ -5,9 +5,12 @@ public class Silindir extends Daire {
 
     public Silindir(double yaricap, double yukseklik) {
         super(yaricap);
-        this.yukseklik = yukseklik < 0 ? 0 : yukseklik;
+        setYukseklik(yukseklik);
     }
 
+    public void setYukseklik(double yukseklik) {
+        this.yukseklik = yukseklik < 0 ? 0 : yukseklik;
+    }
     public double getYukseklik() {
         return yukseklik;
     }
