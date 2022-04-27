@@ -1,6 +1,6 @@
 package homework6;
 
-public class Daire<getAlan> {
+public class Daire {
     private double yariCap;
 
     public Daire() {
